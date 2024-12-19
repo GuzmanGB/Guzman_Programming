@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    /*Hace que */
+    margin: 0;
+    /* Navegadores como chrome pueden empezar con un pequeño margen en los bordes de las paginas, esto hace que ese margen se elimine*/
+    color: #1d9031;
+    /* Establece este color hexadecimal a todo el texto de la página*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* Asigna las siguientes fuentes de letra a toda la pagina web, en caso que una no funcione pasa a la siguiente*/
+}
+
+header {
+    width: 100%;
+    /*Establece un tamaño de longitud a la cabecera de todo lo que ocupe la pantalla*/
+    border: 1px groove #1d9031;
+    /*Imprime un borde por toda la cabecera de un grosor de 1 pixel, con el color hexadecimal escrito y completamente recto*/
+}
+
+.titulo {
+    float: left;
+    /*Hace que la clase llamada "titulo" se alinee a la izquierda de la cabecera*/
+    text-align: center;
+    /*El texto se alineará en el centro de este div llamado "titulo" */
+    margin-left: 30px;
+    /*Inserta un margen izquierdo desde la cabecera hasta este div "titulo" de 25 pixeles*/
+}
+
+.menuEnlaces {
+    /*Hace que todos los elementos de este div se alineen uno al lado del otro, si este display no estubiera, los elementos se alinearian verticalmente uno debajo del otro*/
+    float: right;
+    /*Hace que la clase llamada "menuEnlaces" se alinee a la derecha de la cabecera*/
+    margin-right: 1%;
+    /*Inserta un margen derecho desde la cabecera hasta este div "menuEnlaces" de 1 % de la página*/
+    margin-top: 19.92px;
+    /*Inserta un margen top desde la cabecera hasta este div "menuEnlaces" de 19.92 pixeles*/
+}
+
+.menuEnlaces ul{
+    display: flex;
+    gap: 25px;
+}
+
+.menuEnlaces ul li{
+    text-decoration: none;
+    /*Quita el formato subrayado que ponen los elementos "a"*/
+    list-style:none
+    /*Cambia el color de los elementos "a" de este div al color hexadecimal mencionado*/
+}
+
+.menuEnlaces a{
+    text-decoration: none;
+    /*Quita el formato subrayado que ponen los elementos "a"*/
+    color: #1d9031;
+    /*Cambia el color de los elementos "a" de este div al color hexadecimal mencionado*/
+}
+
+.actiu{
+    font-weight: bold;
+}
+
+footer {
+    color: white;
+    /*Cambia el color de las letras del pie de página a blanco*/
+    background-color: #1d9031;
+    /*Cambia el color del fondo del pie de pagina al color hexadecimal mencionado*/
+    width: 100%;
+    /*Establece un tamaño de longitud al pie de la página de todo lo que ocupe la pantalla*/
+    text-align: center;
+    /*Hace que el texto que esté dentro de este pie de página esté alineado al centro*/
+    position: fixed;
+    /*Hace que el elemento de pie de página se establezca como fijo y no se pueda mover*/
+    bottom: 0;
+    /*Hace que el elemento de pie de página se establezca en la parte inferior de la página*/
+}

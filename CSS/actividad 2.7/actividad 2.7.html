@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2.7</title>
+    <link rel="stylesheet" href="styles 2.7.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulario de Registro</h1>
+        <p id="pIntro">Introdueix les teves dades per continuar amb el registre.</p>
+    </header>
+
+    <main>
+        <form>
+            <div><label for="nombre"> 1 - Inserte su nombre:</label> <input type="text" id="nombre" name="nombre"
+                    pattern="[a-z]{1,40}" required>
+            </div>
+
+            <div><label for="edad">2 - Inserte su edad: </label><input id="edad" type="number" min="18" max="99"
+                    required>
+            </div>
+
+            <div><label for="correo">3 - Inserte su correo electronico:</label><input id="correo" type="email" id="email"
+                    name="email" size="30" required>
+            </div>
+
+            <div><label for="contra"> 4 - Inserte su contraseña: </label>
+                <input id="contra" type="password" minlength="6" maxlength="12" required
+                    placeholder="max 12 carácteres">
+            </div>
+
+            <div> <label for="consolas">5 - Inserte su consola favorita:</label>
+
+                <select id="consolas" name="consolas" multiple required>
+                    <option>Nintendo Switch </option>
+                    <option> PS5 </option>
+                    <option>Xbox Series X</option>
+                    <option>Xbox Series S </option>
+                    <option>Steam Deck</option>
+                    <option>Otras consolas </option>
+                </select>
+                <div>
+
+                    <div><label for="noti">6 - Activar suscripción a las notificaciones por correo</label>
+                        <input id="noti" type="checkbox">
+                    </div>
+
+                    <div><label for="coments">7 -Comentarios</label>
+                        <textarea id="colorComent" rows="7" cols="30"></textarea>
+                        <br>
+                    </div>
+                    <input type="submit" value="Enviar información">
+        </form>
+    </main>
+
+    <footer>
+        <p>La meva pàgina de Videojocs. Tots els drets reservats.</p>
+    </footer>
+
+</body>
+
+</html>

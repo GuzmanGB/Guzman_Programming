@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #01134e;
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    color: black;
+    width: 120px;
+    background-color: white;
+
+    padding-left: 20px;
+    padding-top: 3%;
+    text-align: left;
+    float: left;
+}
+
+main {
+    flex: 1;
+    color: black;
+    padding-left: 5%;
+}
+
+.contenedor_imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto p {
+    color: rgb(39, 39, 39);
+}
+
+footer {
+    color: white;
+    background-color: #01134e;
+    width: 100%;
+    padding: 0px 0;
+    text-align: center;
+    position: relative;
+}
