@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        caption,
+        table,
+        td,
+        th {
+            text-align: center;
+            vertical-align: middle;
+            border: 1px dotted lightblue;
+        }
+
+        td {
+            background-color: #E1EFE1;
+        }
+
+        th {
+            background-color: #2D8937;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <h1>Formulario de Registro</h1>
+        <br>
+
+        <p><label for="nombre"> 1- Inserte su nombre:</label> <input type="text" id="nombre" name="nombre"
+                pattern="[a-z]{1,40}" required>
+        </p>
+
+        <p>2- Inserte su edad: <input type="number" min="18" max="99" required>
+        </p>
+
+        <p>3 -Inserte su correo electronico: <input type="email" id="email" name="email" size="30" required>
+        </p>
+
+        <p> Inserte su contraseña: <input type="password" minlength="6" maxlength="12" required
+                placeholder="max 12 carácteres">
+        </p>
+
+        <p> 5 - Inserte su consola favorita:
+
+            <select id="consolas" name="consolas" multiple>
+
+                <option>Nintendo Switch </option>
+                <option> PS5 </option>
+                <option>Xbox Series X</option>
+                <option>Xbox Series S </option>
+                <option>Steam Deck</option>
+                <option>Otras consolas </option>
+            </select>
+        <p>
+
+        <p>6- Activar suscripción a las notificaciones por correo <input type="checkbox">
+        </p>
+
+        <p>7-Comentarios
+            <textarea rows="7" cols="30"></textarea>
+            <br>
+        </p>
+        <input type="submit" value="Enviar información">
+
+
+    </form>
+</body>
+
+</html>

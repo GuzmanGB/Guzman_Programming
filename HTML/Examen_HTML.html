@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro examen de HTML</title>
+    <style>
+        Body {
+            max-width: 600px;
+            /* Ancho máximo del formulario */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<header>
+    <h1>Nuestro examen de HTML</h1>
+</header>
+
+<body>
+    <main>
+
+        <ul>
+            <li><a href="#Introduccion">Introducción</a></li>
+            <li><a href="#Formulario">Formulario</a></li>
+            <li><a href="#Finalizacion">Finalización</a></li>
+        </ul>
+
+        <h2 id="Introduccion">Sección 1: Introduccion</h2>
+
+        <p>
+            Aquest és el primer examen de l'assignatura Llenguatges de marques
+            i sistemes de gestió de la informació.
+        </p>
+
+        <h2 id="Formulario">Sección 2: Formulario</h2>
+
+        <form>
+            Inserte Nombre de Asignatura: <input type="text" required>
+
+            Inserte Nombre del Alumno/na: <input type="text" required>
+
+            Inserte su Correo Electronico: <input type="email" required>
+
+            Actividades Libradas:
+            <select multiple>
+                <option value="0"> Ninguna </option>
+                <option value="1"> Actividad 1 </option>
+                <option value="2"> Actividad 2</option>
+                <option value="3"> Actividad 3</option>
+                <option value="4">Actividad 4</option>
+            </select>
+
+            Inserte su Nota (entre 0-10):
+            <input type="number" min="0" max="10" required>
+
+            Comentarios:
+            <textarea cols="40" rows="6"></textarea>
+
+            <input type="submit">
+
+        </form>
+
+        <h2 id="Finalizacion">Sección 3: Finalización</h2>
+        <p>
+            Un cop finalitzades les dues parts lliurables de l'examen, es
+            corregirà i lliurarà la nota via Gestib, el més ràpid possible.
+            Molta sort!
+        </p>
+    </main>
+</body>
+<footer>
+    <p> © 2024 Nuestro examen de HTML | Contacto: ggarcia4@nigul.cide.es </p>
+</footer>
+
+</html>
