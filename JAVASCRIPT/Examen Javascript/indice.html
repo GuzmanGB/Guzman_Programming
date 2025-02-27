@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Contador de clics</h1>
+
+
+    <p id="paragrafo">
+        0
+    </p>
+
+
+    <button id="botonContador" onclick="sumarContador()"> Contar </button>
+    <button id="botonReiniciar" onclick="reiniciarContador()"> Reiniciar </button>
+
+
+    <h1>Añadir Comentarios</h1>
+
+    <form>
+        <textarea cols="40" rows="6" id="textarea1"></textarea>
+    </form>
+
+    <button id="botonAddCom" onclick="newParagraph()">Añadir Comentarios</button>
+    <button id="botonElCom" onclick="eliminarParag()">Eliminar Comentarios</button>
+
+
+    <div id="divComments">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

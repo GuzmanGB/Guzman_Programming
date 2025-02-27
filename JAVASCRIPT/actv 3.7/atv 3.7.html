@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de ropa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">Tienda</div>
+
+            <ul class="menu">
+
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Quien somos?</a></li>
+                <li><a href="#">Contacto</a></li>
+
+            </ul>
+
+            <div class="barra-busqueda">
+                <input type="text" id="searchBar" placeholder="Buscar...">
+            </div>
+
+
+            <ul class="menu-desplegue" id="menu-desplegue">
+
+                <li><a href="#" onclick="gestionarMenuNav()">Inicio</a></li>
+                <li><a href="#" onclick="gestionarMenuNav()">Productos</a></li>
+                <li><a href="#" onclick="gestionarMenuNav()">Quien somos?</a></li>
+                <li><a href="#" onclick="gestionarMenuNav()">Contacto</a></li>
+
+            </ul>
+
+
+            <div class="hamburguesa" onclick="gestionarMenuNav()"> ☰ </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="divImagenes">
+                <div>
+                    <h4>USB SHIRT</h4>
+                    <img src="imgs/12796_camisetas.png">
+                </div>
+
+                <div>
+                    <h4>CTRL / ALT / DEL SHIRT</h4>
+                    <img src="imgs/camisetas-camiseta-friki-ctrl-alt-del-mafia.png">
+                </div>
+
+                <div>
+                    <h4>ONE PIECE SHIRT</h4>
+                    <img src="imgs/camiseta-blanca-luffy.png">
+                </div>
+
+                <div>
+                    <h4>JJK SHIRT</h4>
+                    <img src="imgs/il_570xN.4802909816_1gis.png">
+                </div>
+                
+            </div>
+            
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

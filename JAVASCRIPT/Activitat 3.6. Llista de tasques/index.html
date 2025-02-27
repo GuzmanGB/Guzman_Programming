@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE TAREAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>LISTA DE TAREAS</h1>
+
+        <div class="principal">
+
+            <form class="formulario" action="" id="task-form">
+                <input type="text" id="tareaInput" placeholder="Agrega tu tarea" required>
+                <input type="submit" class="boton" value="Agregar Tarea">
+            </form>
+
+            <input type="button" class="boton_eliminar" value="Eliminar todas las tareas" id="deleteAllTasks">
+            <input type="button" class="boton_eliminar" value="Eliminar tareas completadas" id="deleteCompletedTasks">
+            
+            <div class="filters">
+                <button id="showAll" class="boton_eliminar">Mostrar todas</button>
+                <button id="showActive" class="boton_eliminar">Mostrar activas</button>
+                <button id="showCompleted" class="boton_eliminar">Mostrar completadas</button>
+            </div>
+            
+            <h2>TAREAS: </h2>
+
+            <div class="lista" id="taskList"></div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
