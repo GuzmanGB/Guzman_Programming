@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de Búsqueda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>Resultado de tu búsqueda</h2>
+    <div id="resultado">
+        <!-- Los resultados se llenarán con JavaScript -->
+    </div>
+    <button onclick="window.location.href='index.html'">Nueva búsqueda</button>
+
+    <script>
+        // Obtener los parámetros de la URL
+        const params = new URLSearchParams(window.location.search);
+
+        // Mostrar los datos en la página
+        const resultadoDiv = document.getElementById('resultado');
+        resultadoDiv.innerHTML = `
+            <p><strong>Origen:</strong> ${params.get('origen')}</p>
+            <p><strong>Destino:</strong> ${params.get('destino')}</p>
+            <p><strong>Fecha de inicio:</strong> ${params.get('fechaInicio')}</p>
+            <p><strong>Fecha de fin:</strong> ${params.get('fechaFin')}</p>
+            <p><strong>Número de adultos:</strong> ${params.get('adultos')}</p>
+            <p><strong>Número de niños:</strong> ${params.get('ninos')}</p>
+            <p><strong>Descuento:</strong> ${params.get('descuento') || 'Sin descuento'}</p>
+        `;
+    </script>
+</body>
+
+</html>
